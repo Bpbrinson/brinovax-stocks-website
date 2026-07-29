@@ -1,0 +1,20 @@
+:root { --brand: Gold; --ink: #1f2430; --muted: #6b7280; --border: #e6e8ee; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); }
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.site-header { display: flex; gap: 1rem; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.brand { font-weight: 800; font-size: 1.2rem; color: var(--ink); text-decoration: none; margin-right: auto; }
+.site-header nav { display: flex; gap: 0.3rem; flex-wrap: wrap; }
+.site-header nav a { padding: 0.4rem 0.8rem; border-radius: 999px; color: var(--muted); text-decoration: none; font-weight: 600; }
+.site-header nav a.active { background: var(--brand); color: #fff; }
+.hero { background: color-mix(in srgb, var(--brand) 14%, white); padding: 5rem 1.5rem; text-align: center; }
+.hero-inner { max-width: 700px; margin: 0 auto; }
+.hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 1rem; }
+.hero p { color: var(--muted); font-size: 1.15rem; }
+.btn { display: inline-block; margin-top: 1rem; padding: 0.7rem 1.4rem; border-radius: 999px; background: var(--brand); color: #fff; text-decoration: none; font-weight: 700; }
+.features { max-width: 1000px; margin: 0 auto; padding: 3rem 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.2rem; }
+.features article { border: 1px solid var(--border); border-radius: 14px; padding: 1.4rem; }
+.page { max-width: 740px; margin: 0 auto; padding: 3rem 1.5rem; }
+.lede { color: var(--muted); font-size: 1.1rem; }
+.plain { list-style: none; padding: 0; } .plain li { padding: 0.25rem 0; }
+.site-footer { margin-top: auto; text-align: center; padding: 2rem; color: var(--muted); border-top: 1px solid var(--border); }
